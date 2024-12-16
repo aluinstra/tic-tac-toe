@@ -1,0 +1,53 @@
+/* ColorPickerModal.css */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: 300px;
+    text-align: center;
+}
+
+.color-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.radio-label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.radio-label.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none; /* Disable interaction */
+    
+}
+
+.radio-label input {
+    margin-right: 5px;
+}
+
+.close-button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
